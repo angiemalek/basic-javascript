@@ -3,7 +3,7 @@ let pokemonList = [
     name: 'bulbasaur',
     height: 0.7,
     weight: 6.9,
-    type: ['grass,' 'poison']
+    type: ['grass', 'poison']
   },
 
   {
