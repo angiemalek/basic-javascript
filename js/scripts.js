@@ -39,10 +39,11 @@ let pokemonList = [
 // Loop to load pokemon list
 for (let i = 0; i < pokemonList.length; i++);
 // Conditional for pokemon
-if (pokemonList[i].height > 2.0){
-    console.log(pokemonList[i].name + ' Wow that's big! ');
+
+//if (pokemonList[i].height > 2.0){
+  //  console.log(pokemonList[i].name + ' Wow that's big! ');
   }
- } 
+}
 
 // Prints pokemon names to index
   document.write(pokemonList[0].name + ' height is 0.7 ');
