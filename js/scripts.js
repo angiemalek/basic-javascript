@@ -59,14 +59,14 @@ pokemonRepository.add({name: 'squirtle'});
 console.log(pokemonRepository.getAll());
 
 
-//document.write(pokemonRepository.getAll());
+document.write(pokemonRepository.getAll());
 // for loop executing name and height of pokemon
 //for (let i=0; i < pokemonList.length; i++);
 //pokemonRepository.getAll().forEach(function(pokemon) {
   //pokemonRepository.addListItem(pokemon);
 //});
 
-document.write(pokemonRepository);
+
 
 
 //for each loop listing pokemon details
