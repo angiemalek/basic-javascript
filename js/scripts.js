@@ -39,9 +39,20 @@ let pokemonList = [
 
 
 // for loop executing name and height of pokemon
-for (let i=0; i < pokemonList.length; i++){
-  if (pokemonList[i].height >= 0.5){
-    document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
- }else if (pokemonList[i].height <=0.5 )
-    document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
-};
+for (let i=0; i < pokemonList.length; i++);
+
+//for each loop listing pokemon details
+pokemonList.forEach(function(pokemon){
+  console.log(pokemon.name  +  ' is ' + pokemon.height);
+  document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
+});
+
+
+
+
+//for loop to print pokemon
+/*if (pokemonList[i].height >= 0.5){
+  document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
+}else if (pokemonList[i].height <=0.5 )
+  document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
+};*/
