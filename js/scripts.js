@@ -36,18 +36,12 @@ let pokemonList = [
   },
 ]
 
-// Loop to load pokemon list
-for (let i = 0; i < pokemonList.length; i++){
-// Conditional for pokemon
-if (pokemonList[i].height >= 0.5){
-    console.log(pokemonList[i].name + ' Wow, Thats Big!' );
-  }else if (pokemonList[i].height <0.5){
-    console.log(pokemonList[i].name + ' Wow, Thats Tiny!' );
-  }
-}
-// Prints pokemon names to index
-  document.write(pokemonList[0].name + ' height is 0.7 ');
-  document.write(pokemonList[1].name + ' height is 0.3 ');
-  document.write(pokemonList[2].name + ' height is 5.5 ');
-  document.write(pokemonList[3].name + ' height is 7.5 ');
-  document.write(pokemonList[4].name + ' height is 0.4 ');
+
+
+// for loop executing name and height of pokemon
+for (let i=0; i < pokemonList.length; i++){
+  if (pokemonList[i].height >= 0.5){
+    document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
+ }else if (pokemonList[i].height <=0.5 )
+    document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
+};
