@@ -1,3 +1,6 @@
+// creates IIFE
+let pokemonRepository = (function() {
+
 // Creates an array of Pokemon
 let pokemonList = [
   {
@@ -34,18 +37,43 @@ let pokemonList = [
     weight: 2.5,
     type: ['psychic', 'grass']
   },
-]
+];
+
+//Functions
+function add(pokemon){
+    pokemonList.push(pokemon);
+  }
+
+  function getAll() {
+    return pokemonList;
+  }
+
+  return {
+    add: add,
+    getAll: getAll
+  };
+})();
+
+console.log(pokemonRepository.getAll());
+pokemonRepository.add({name: 'squirtle'});
+console.log(pokemonRepository.getAll());
 
 
-
+//document.write(pokemonRepository.getAll());
 // for loop executing name and height of pokemon
-for (let i=0; i < pokemonList.length; i++);
+//for (let i=0; i < pokemonList.length; i++);
+//pokemonRepository.getAll().forEach(function(pokemon) {
+  //pokemonRepository.addListItem(pokemon);
+//});
+
+document.write(pokemonRepository);
+
 
 //for each loop listing pokemon details
-pokemonList.forEach(function(pokemon){
-  console.log(pokemon.name  +  ' is ' + pokemon.height);
-  document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
-});
+//pokemonList.forEach(function(pokemonRepository){
+  //console.log(pokemon.name  +  ' is ' + pokemon.height);
+  //document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
+//});
 
 
 
