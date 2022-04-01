@@ -60,6 +60,7 @@ console.log(pokemonRepository.getAll());
 
 
 document.write(pokemonRepository.getAll());
+
 // for loop executing name and height of pokemon
 //for (let i=0; i < pokemonList.length; i++);
 //pokemonRepository.getAll().forEach(function(pokemon) {
