@@ -81,13 +81,13 @@ let pokemonRepository = (function() {
 
   // for each loop listing pokemon details
   //   pokemonList.forEach(function(pokemonRepository){
-  //   console.log(pokemon.name  +  ' is ' + pokemon.height);
-  //   document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
-  // });
+  //    console.log(pokemon.name  +  ' is ' + pokemon.height);
+  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
+  //  });
 
   // for loop to print pokemon
-  /*   if (pokemonList[i].height >= 0.5){
-       document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
-       } else if (pokemonList[i].height <=0.5 )
-       document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
-     };*/
+  //   if (pokemonList[i].height >= 0.5){
+  //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
+  //     } else if (pokemonList[i].height <=0.5 )
+  //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
+  //   };
