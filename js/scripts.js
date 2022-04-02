@@ -58,30 +58,33 @@ console.log(pokemonRepository.getAll());
 pokemonRepository.add({name: 'squirtle'});
 console.log(pokemonRepository.getAll());
 
+pokemonRepository.getAll().forEach(function(pokemon) {
+//Conditonal for Pokemon
+  if (pokemon.height >= 0.5) {
+    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')</p>');
+  } else if (pokemon.height < 0.5) {
+    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
+  }
+});
 
-document.write(pokemonRepository.getAll());
+
+
 
 // for loop executing name and height of pokemon
-//for (let i=0; i < pokemonList.length; i++);
-//pokemonRepository.getAll().forEach(function(pokemon) {
-  //pokemonRepository.addListItem(pokemon);
+//  for (let i=0; i < pokemonList.length; i++);
+//  pokemonRepository.getAll().forEach(function(pokemon) {
+//    pokemonRepository.addListItem(pokemon);
 //});
-
-
-
 
 //for each loop listing pokemon details
-//pokemonList.forEach(function(pokemonRepository){
-  //console.log(pokemon.name  +  ' is ' + pokemon.height);
-  //document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
+//  pokemonList.forEach(function(pokemonRepository){
+//  console.log(pokemon.name  +  ' is ' + pokemon.height);
+//  document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
 //});
 
-
-
-
 //for loop to print pokemon
-/*if (pokemonList[i].height >= 0.5){
-  document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
-}else if (pokemonList[i].height <=0.5 )
-  document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
-};*/
+/*  if (pokemonList[i].height >= 0.5){
+    document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
+    } else if (pokemonList[i].height <=0.5 )
+    document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
+  };*/
