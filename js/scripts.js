@@ -61,11 +61,13 @@ console.log(pokemonRepository.getAll());
 pokemonRepository.getAll().forEach(function(pokemon) {
 //Conditonal for Pokemon
   if (pokemon.height >= 0.5) {
-    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')</p>');
+    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Big!</p>');
   } else if (pokemon.height < 0.5) {
-    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
+    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Tiny!</p>')
   }
 });
+
+
 
 
 
