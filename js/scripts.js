@@ -44,6 +44,7 @@ let pokemonRepository = (function() {
       pokemonList.push(pokemon);
   }
 
+// returns all pokemons
   function getAll() {
     return pokemonList;
   }
@@ -73,7 +74,7 @@ let pokemonRepository = (function() {
 
   console.log(pokemonRepository.getAll());
 
-  pokemonRepository.getAll().forEach(function(pokemon)
+  pokemonRepository.getAll().forEach(function(pokemon) {
     pokemonRepository.addListItem(pokemon);
 });
 
