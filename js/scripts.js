@@ -1,4 +1,4 @@
-// creates IIFE
+// Creates IIFE
 let pokemonRepository = (function() {
 
   // Creates an array of Pokemon
@@ -44,12 +44,12 @@ let pokemonRepository = (function() {
       pokemonList.push(pokemon);
   }
 
-// returns all pokemons
+// Returns all pokemons
   function getAll() {
     return pokemonList;
   }
 
-  // Function manipulating the DOM
+// Function manipulating the DOM
   function addListItem(pokemon){
     let pokemonList =
       document.querySelector('.pokemon-list');
