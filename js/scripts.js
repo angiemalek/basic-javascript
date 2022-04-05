@@ -42,36 +42,45 @@ let pokemonRepository = (function() {
   //Functions
   function add(pokemon){
       pokemonList.push(pokemon);
-    }
+  }
 
-    function getAll() {
-      return pokemonList;
-    }
+  function getAll() {
+    return pokemonList;
+  }
 
-    return {
-      add: add,
-      getAll: getAll
-    };
+  // Function manipulating the DOM
+  function addListItem(pokemon){
+    let pokemonList =
+      document.querySelector('.pokemon-list');
+    let pokemonList =
+      document.createElement('li');
+    let button =
+      document.createElement('button');
+        button.innerText = pokemon.name;
+        button.classList.add('button-class');
+        listpokemon.appendChild(button);
+        pokemonList.appendChild(listpokemon);
+      }
 
-  })();
+  return {
+    add: add,
+    getAll: getAll,
+    addListItem: addListItem,
+  };
+})();
 
-  console.log(pokemonRepository.getAll());
   pokemonRepository.add({name: 'squirtle'});
+
   console.log(pokemonRepository.getAll());
 
-  pokemonRepository.getAll().forEach(function(pokemon) {
-  //Conditonal for Pokemon
-    if (pokemon.height >= 0.5) {
-      document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Big!</p>');
-    } else if (pokemon.height < 0.5) {
-      document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Tiny!</p>')
-    }
-  });
+  pokemonRepository.getAll().forEach(function(pokemon)
+    pokemonRepository.addListItem(pokemon);
+});
 
 
 
 
-
+  // TO DO: Delete code once app completed
 
   //  for loop executing name and height of pokemon
   //   for (let i=0; i < pokemonList.length; i++);
@@ -91,3 +100,10 @@ let pokemonRepository = (function() {
   //     } else if (pokemonList[i].height <=0.5 )
   //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
   //   };
+
+  //  Conditonal for pokemon
+  //  if (pokemon.height >= 0.5) {
+  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Big!</p>');
+  //  } else if (pokemon.height < 0.5) {
+  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Tiny!</p>')
+  // };
