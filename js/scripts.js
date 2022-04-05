@@ -63,6 +63,10 @@ let pokemonRepository = (function() {
         pokemonList.appendChild(listpokemon);
       }
 
+  function showDetails(pokemon){
+    console.log(pokemon);
+  }
+
   return {
     add: add,
     getAll: getAll,
