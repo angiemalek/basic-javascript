@@ -15,6 +15,11 @@
   border: 6px solid #D82B05; /*Red*/
 }
 
+
+.list {
+  text-align: center;
+}
+
 .title{
   text-align: center;
   font-size: 25px;
