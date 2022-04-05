@@ -4,38 +4,38 @@ let pokemonRepository = (function() {
   // Creates an array of Pokemon
   let pokemonList = [
     {
-      name: 'bulbasaur',
+      name: 'Bulbasaur',
       height: 0.7,
       weight: 6.9,
-      type: ['grass', 'poison']
+      type: ['Grass', 'Poison']
     },
 
     {
-      name: 'weedle',
+      name: 'Weedle',
       height: 0.3,
       weight: 3.2,
-      type: ['bug', 'poison']
+      type: ['Bug', 'Poison']
     },
 
     {
-      name: 'jigglypuff',
+      name: 'Jigglypuff',
       height: 0.5,
       weight: 5.5,
-      type: ['fairy', 'normal']
+      type: ['Fairy', 'Normal']
     },
 
     {
-      name: 'zubat',
+      name: 'Zubat',
       height: 0.8,
       weight: 7.5,
-      type: ['poison', 'flying']
+      type: ['Poison', 'Flying']
     },
 
     {
-      name: 'exeggcute',
+      name: 'Exeggcute',
       height: 0.4,
       weight: 2.5,
-      type: ['psychic', 'grass']
+      type: ['Psychic', 'Grass']
     },
   ];
 
@@ -77,7 +77,7 @@ let pokemonRepository = (function() {
   };
 })();
 
-  pokemonRepository.add({name: 'squirtle'});
+  pokemonRepository.add({name: 'Squirtle'});
 
   console.log(pokemonRepository.getAll());
 
