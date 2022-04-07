@@ -15,11 +15,20 @@
   border: 6px solid #D82B05; /*Red*/
 }
 
+/* Removes bullets from list*/
+ul.pokemon-list {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
 
+/* Alignment for POkemon text*/
 .list {
   text-align: center;
 }
 
+/* Parameters for Pokemon title, may change later*/
 .title{
   text-align: center;
   font-size: 25px;
