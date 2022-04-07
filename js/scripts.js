@@ -2,42 +2,7 @@
 let pokemonRepository = (function() {
 
   // Creates an array of Pokemon
-  let pokemonList = [
-    {
-      name: 'Bulbasaur',
-      height: 0.7,
-      weight: 6.9,
-      type: ['Grass', 'Poison']
-    },
-
-    {
-      name: 'Weedle',
-      height: 0.3,
-      weight: 3.2,
-      type: ['Bug', 'Poison']
-    },
-
-    {
-      name: 'Jigglypuff',
-      height: 0.5,
-      weight: 5.5,
-      type: ['Fairy', 'Normal']
-    },
-
-    {
-      name: 'Zubat',
-      height: 0.8,
-      weight: 7.5,
-      type: ['Poison', 'Flying']
-    },
-
-    {
-      name: 'Exeggcute',
-      height: 0.4,
-      weight: 2.5,
-      type: ['Psychic', 'Grass']
-    },
-  ];
+  let pokemonList = [];
 
   //Functions
   function add(pokemon){
