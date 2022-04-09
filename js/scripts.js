@@ -69,11 +69,11 @@ let pokemonRepository = (function() {
        });
       }
 
-
-
-  function showDetails(pokemon){
-    console.log(pokemon);
-  }
+  //Loads data of Pokemon
+  function showDetails(pokemon) {
+    loadDetails(item).then(function (){
+    });
+  )
 
   return {
     add: add,
