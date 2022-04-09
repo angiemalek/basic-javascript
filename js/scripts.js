@@ -4,12 +4,17 @@ let pokemonRepository = (function() {
   // Creates an array of Pokemon
   let pokemonList = [];
 
+  // Creates link to URL to complete pokemon list
+  let apiUrl = 'https://pokeapi.co/api./v2/pokemon/?limit=150';
+
   //Functions
-  function add(pokemon){
+
+  // Adds new Pokemon
+  function add(pokemon) {
       pokemonList.push(pokemon);
   }
 
-// Returns all pokemons
+  // Returns all pokemons
   function getAll() {
     return pokemonList;
   }
