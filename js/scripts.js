@@ -54,6 +54,21 @@ let pokemonRepository = (function() {
       });
     }
 
+    //Load Pokemon details
+    function loadDetails(item) {
+      let url = item.detailsUrl;
+        return fetch(url).then(function (response) {
+          return response.json();
+        }).then (function (details) {
+          // Adds details to Pokemons
+          item.imageUrl = details.sprites.front_default;
+          item.height = details.height;
+          item.types = details.types;
+        }).catch(function (e) {
+            console.error(e);
+       });
+      }
+
 
 
   function showDetails(pokemon){
