@@ -71,7 +71,8 @@ let pokemonRepository = (function() {
 
   //Loads data of Pokemon
   function showDetails(pokemon) {
-    loadDetails(item).then(function (){
+    loadDetails(item).then(function () {
+      console.log(item);
     });
   )
 
@@ -87,7 +88,7 @@ let pokemonRepository = (function() {
 // End of IIFE
 
 pokemonRepository.loadList().then(function() {
-  pokemonRepository.getAll().forEach(function(pokemon) {
+  pokemonRepository.getAll().forEach(function (pokemon) {
     pokemonRepository.addListItem(pokemon);
   });
 });
