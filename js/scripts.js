@@ -86,12 +86,10 @@ let pokemonRepository = (function() {
 })();
 // End of IIFE
 
-  pokemonRepository.add({name: 'Squirtle'});
-
-  console.log(pokemonRepository.getAll());
-
+pokemonRepository.loadList().then(function() {
   pokemonRepository.getAll().forEach(function(pokemon) {
     pokemonRepository.addListItem(pokemon);
+  });
 });
 
 
