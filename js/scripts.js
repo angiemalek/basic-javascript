@@ -79,8 +79,12 @@ let pokemonRepository = (function() {
     add: add,
     getAll: getAll,
     addListItem: addListItem,
+    loadListItem: loadListItem,
+    loadDetails: loadDetails,
+    showDetails: showDetails
   };
 })();
+// End of IIFE
 
   pokemonRepository.add({name: 'Squirtle'});
 
