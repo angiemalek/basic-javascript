@@ -19,7 +19,7 @@ let pokemonRepository = (function() {
     return pokemonList;
   }
 
-// Function manipulating the DOM
+  // Creates button of Pokemon
   function addListItem(pokemon){
     let pokemonList =
       document.querySelector('.pokemon-list');
@@ -31,10 +31,12 @@ let pokemonRepository = (function() {
         button.classList.add('button-class');
         listpokemon.appendChild(button);
         pokemonList.appendChild(listpokemon);
-        button.addEventListener('click', function(){
+        button.addEventListener('click', function() {
           showDetails(pokemon);
-        })
-      }
+      })
+    }
+
+
 
   function showDetails(pokemon){
     console.log(pokemon);
