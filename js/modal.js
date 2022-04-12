@@ -13,7 +13,7 @@ let modal = function () {
     modal.appendChild(myImage);
 
     let closeButtonElement = document.createElement('button')
-    closeButtonElement.classList.add('modal-close');4
+    closeButtonElement.classList.add('modal-close');
     closeButtonElement.innerText = 'Close';
     closeButtonElement.addEventListener('click', hideModal);
 
