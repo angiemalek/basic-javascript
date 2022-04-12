@@ -41,6 +41,6 @@ ul.pokemon-list {
 }
 
 #modal-container.is-visible {
-// CSS for the modal container-add later
+/* CSS for the modal container-add later*/
   display: block;
 }
