@@ -5,7 +5,7 @@ let pokemonRepository = (function() {
   let pokemonList = [];
 
   // Creates link to URL to complete pokemon list
-  let apiUrl = 'https://pokeapi.co/api./v2/pokemon/?limit=150';
+  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   //Functions
 
@@ -71,10 +71,10 @@ let pokemonRepository = (function() {
 
   //Loads data of Pokemon
   function showDetails(pokemon) {
-    loadDetails(item).then(function () {
-      console.log(item);
+    loadDetails(pokemon).then(function () {
+      console.log(pokemon);
     });
-  )
+  }
 
   return {
     add: add,
