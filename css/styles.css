@@ -29,14 +29,14 @@ ul.pokemon-list {
 }
 
 /* Parameters for Pokemon title, may change later*/
-.title{
+.title {
   text-align: center;
   font-size: 25px;
   color: #D82B05;
   text-shadow: -1px 1px 0px #000;
 }
 
-/* Modal Parameters */
+/* back ground of modal container */
 #modal-container {
   position: fixed;
   padding: 20px;
@@ -59,6 +59,7 @@ ul.pokemon-list {
   text-align: center;
 }
 
+/* modal container to hold pokemon image and stats */
 .modal {
   margin: auto;
   display: inline-block;
@@ -72,6 +73,7 @@ ul.pokemon-list {
   border-radius: 40px;
 }
 
+/* close button*/
 .modal-close {
   float: right;
   border: 0;
@@ -80,10 +82,12 @@ ul.pokemon-list {
   text-decoration: none;
 }
 
+/* modal title */
 .modal h1 {
   margin-top: 0;
 }
 
+/* modal text */
 .modal p {
   margin-bottom: 0;
 }
