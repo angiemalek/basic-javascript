@@ -38,8 +38,13 @@ ul.pokemon-list {
   text-shadow: -1px 1px 0px #000;
 }
 
+
 /* back ground of modal container */
 #modal-container {
+  display: none;
+}
+
+#modal-container.is-visible {
   position: fixed;
   padding: 20px;
   box-sizing: border-box;
@@ -48,7 +53,7 @@ ul.pokemon-list {
   width: 100%;
   height: 100%;
   background: gray;
-  display: none;
+  display: block;
 
   /* to show it above other content */
   z-index: 999;
@@ -59,11 +64,6 @@ ul.pokemon-list {
   /* this is used to center the modal */
   display: grid;
   text-align: center;
-}
-
-#modal-container.is-visible {
-/* CSS for the modal container-add later*/
-  display: block;
 }
 
 /* modal container to hold pokemon image and stats */
