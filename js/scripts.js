@@ -75,7 +75,7 @@ let pokemonRepository = (function() {
       console.log();
     })
   };
-
+/*
 // Shows pokemon modal
  function showModal(title, text) {
    let modalContainer = document.querySelector('#modal-container');
@@ -130,7 +130,7 @@ modalContainer.addEventListener('click', (e) => {
   if (target === modalContainer) {
     hideModal();
   }
-});
+}); */
 
   return {
     add: add,
