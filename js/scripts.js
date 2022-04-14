@@ -72,8 +72,9 @@ let pokemonRepository = (function() {
   //Loads data of Pokemon
   function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
-      showDetails();
-    });
+      console.log();
+    })
+  };
 
 // Shows pokemon modal
  function showModal(title, text) {
