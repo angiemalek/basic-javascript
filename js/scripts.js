@@ -131,10 +131,6 @@ modalContainer.addEventListener('click', (e) => {
   }
 });
 
-
-
-
-
   return {
     add: add,
     getAll: getAll,
