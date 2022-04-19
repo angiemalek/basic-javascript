@@ -1,5 +1,9 @@
+body {
+  background-color: #ffeae6
+}
+
 .button-class {
-  background-color: #FFE4DE;
+  background-color: #FFd5cc;
   border: none;
   border-radius: 40px;
   color: white;
@@ -10,7 +14,6 @@
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
-  background-color: #FFE4DE;
   color: black;
   border: 6px solid #D82B05; /*Red*/
 }
