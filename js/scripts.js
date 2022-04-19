@@ -108,7 +108,7 @@ let pokemonRepository = (function() {
      if (numberOfTypes === 1) {
        typeElement.innerText += type.type.name;
      } else {
-       typeElement.innerText += type.type.name + '';
+       typeElement.innerText += type.type.name + ' ';
      }
    })
 
