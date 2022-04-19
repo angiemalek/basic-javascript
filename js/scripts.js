@@ -90,18 +90,24 @@ let pokemonRepository = (function() {
    // Add new modal content
    let closeButtonElement = document.createElement('button');
    closeButtonElement.classList.add('modal-close');
-   closeButtonElement.innerText = 'Close';
+   closeButtonElement.innerText = 'X';
    closeButtonElement.addEventListener('click', hideModal);
 
    let titleElement = document.createElement('h1');
    titleElement.innerText = pokemon.name;
 
    let contentElement = document.createElement('p');
-   contentElement.innerText = pokemon.name;
+   contentElement.innerText = pokemon.height + pokemon.types;
+
+   let imageElement = document.createElement('img');
+   imageElement.classList.add('modal-image');
+   imageElement.src = pokemon.imageUrl;
+
 
    modal.appendChild(closeButtonElement);
    modal.appendChild(titleElement);
    modal.appendChild(contentElement);
+   modal.appendChild(imageElement);
    modalContainer.appendChild(modal);
 
    modalContainer.classList.add('is-visible');
