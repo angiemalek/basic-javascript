@@ -1,8 +1,11 @@
 
 body {
-  /*background-image: url(../images/pokemons.png);*/
+  /*background-image: url(../images/opac.pokemons.png);*/
  background-color: #ffeae6;
+}
 
+.background{
+  background-image:url(../images/opac.pokemons.png);
 }
 
 .button-class {
