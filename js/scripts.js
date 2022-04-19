@@ -96,8 +96,22 @@ let pokemonRepository = (function() {
    let titleElement = document.createElement('h1');
    titleElement.innerText = pokemon.name;
 
-   let contentElement = document.createElement('p');
-   contentElement.innerText = pokemon.height + pokemon.types;
+   let heightElement = document.createElement('p');
+   heightElement.innerText = 'Height: ' + pokemon.height;
+
+   let typeElement = document.createElement('p');
+   typeElement.innerText = 'Type: ';
+
+   pokemon.types.forEach((type, numberOfTypes) => {
+     numberOfTypes = pokemon.types.pokemon;
+
+     if (numberOfTypes === 1) {
+       typeElement.innerText += type.type.name;
+     } else {
+       typeElement.innerText += type.type.name + '';
+     }
+   })
+
 
    let imageElement = document.createElement('img');
    imageElement.classList.add('modal-image');
@@ -107,7 +121,8 @@ let pokemonRepository = (function() {
    modal.appendChild(closeButtonElement);
    modal.appendChild(titleElement);
    modal.appendChild(imageElement);
-   modal.appendChild(contentElement);
+   modal.appendChild(heightElement);
+   modal.appendChild(typeElement);
    modalContainer.appendChild(modal);
 
    modalContainer.classList.add('is-visible');
