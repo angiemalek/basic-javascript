@@ -23,6 +23,8 @@ body {
 
 /* Removes bullets from list*/
 ul.pokemon-list {
+/*  display: flex;
+  flex-wrap: wrap;*/
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
