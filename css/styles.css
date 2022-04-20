@@ -3,6 +3,10 @@ body {
   /*background-image: url(../images/opac.pokemons.png);*/
  background-color: #ffeae6;
  font-family: 'Slackey', cursive;
+
+ margin: 0;
+ height: 100vh;
+ cursor: url('../images/poke_cursor.png'), auto;
 }
 
 .background {
@@ -21,7 +25,7 @@ body {
   font-family: 'Slackey', cursive;
   font-size: 25px;
   margin: 4px 2px;
-  cursor: pointer;
+  cursor: url('../images/poke_cursor.png'), auto;
   color: black;
   border: 6px solid #D82B05; /*Red*/
 }
