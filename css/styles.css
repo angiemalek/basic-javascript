@@ -2,6 +2,7 @@
 body {
   /*background-image: url(../images/opac.pokemons.png);*/
  background-color: #ffeae6;
+ font-family: 'Slackey', cursive;
 }
 
 .background {
@@ -17,7 +18,8 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-family: 'Slackey', cursive;
+  font-size: 25px;
   margin: 4px 2px;
   cursor: pointer;
   color: black;
@@ -44,9 +46,9 @@ ul.pokemon-list {
 /* Parameters for Pokemon title, may change later*/
 .title {
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   color: #D82B05;
-  text-shadow: -1px 1px 0px #000;
+  text-shadow: -3px 2px 0px #000;
 }
 
 
