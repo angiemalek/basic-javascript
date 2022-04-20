@@ -19,7 +19,7 @@ body {
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  cursor: url(../images/small_pokeball.png);
+  cursor: pointer;
   color: black;
   border: 6px solid #D82B05; /*Red*/
 }
