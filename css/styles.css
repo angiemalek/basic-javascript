@@ -26,6 +26,11 @@ body {
   border: 6px solid #D82B05; /*Red*/
 }
 
+.button-class:hover {
+  background-color:  #ffeae6;
+  color: light gray;
+}
+
 /* Removes bullets from list*/
 ul.pokemon-list {
 /*  display: flex;
