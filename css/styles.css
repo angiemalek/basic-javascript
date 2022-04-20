@@ -6,7 +6,7 @@ body {
 
  margin: 0;
  height: 100vh;
- cursor: url('../images/poke_cursor.png'), auto;
+ cursor: arrow;
 }
 
 .background {
