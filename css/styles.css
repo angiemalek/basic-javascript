@@ -4,7 +4,7 @@ body {
  background-color: #ffeae6;
 }
 
-.background{
+.background {
   background-image:url(../images/opac.pokemons.png);
 }
 
@@ -19,7 +19,7 @@ body {
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  cursor: pointer;
+  cursor: url(../images/small_pokeball.png);
   color: black;
   border: 6px solid #D82B05; /*Red*/
 }
