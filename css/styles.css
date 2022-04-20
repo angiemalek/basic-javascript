@@ -84,8 +84,8 @@ ul.pokemon-list {
   box-sizing: border-box;
   background: #FFE4DE;
   padding: 15px;
-  width: 100%;
-  max-width: 700px;
+  width: 500%;
+  max-width: 350px;
   text-align: center;
   border: 6px solid #D82B05;
   border-radius: 40px;
