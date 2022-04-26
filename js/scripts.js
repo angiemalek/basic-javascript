@@ -81,6 +81,15 @@ let pokemonRepository = (function() {
 
 // Shows pokemon modal
  function showModal(pokemon) {
+
+   let modalBody = $('.modal-body');
+   let modalTitle = $('modal-title');
+   let modalHeader = $('modal-header');
+
+   // Clears existing content of modal
+   modalTitle.empty();
+   modalBody.empty();
+
    modalContainer.classList.add('is-visible');
    // Clears all existing modal content
    modalContainer.innerHTML = '';
@@ -94,14 +103,14 @@ let pokemonRepository = (function() {
    closeButtonElement.innerText = ' X ';
    closeButtonElement.addEventListener('click', hideModal);
 
-   let titleElement = document.createElement('h1');
-   titleElement.innerText = pokemon.name;
+   // Creates element for name in modal
+   let titleElement = $('<h1>' + pokemon.name + '</h1>');
 
-   let heightElement = document.createElement('p');
-   heightElement.innerText = 'Height: ' + pokemon.height;
+   // Creates element for height in modal
+   let heightElement = $('<p>' + 'height : ' + pokemon.height + '</p>');
 
-   let typeElement = document.createElement('p');
-   typeElement.innerText = 'Type: ';
+   // Creates element for type in modal
+   let typeElement = $('<p>' + 'types : ' + pokemon.types + '</p>');
 
    pokemon.types.forEach((type, numberOfTypes) => {
      numberOfTypes = pokemon.types.pokemon;
@@ -113,17 +122,17 @@ let pokemonRepository = (function() {
      }
    })
 
+   // Creates image in modal
+   let imageElement = $('<img class='modal-image>');
+   imageElement.attr('src', pokemon.imageUrl);
 
-   let imageElement = document.createElement('img');
-   imageElement.classList.add('modal-image');
-   imageElement.src = pokemon.imageUrl;
 
 
    modal.appendChild(closeButtonElement);
-   modal.appendChild(titleElement);
-   modal.appendChild(imageElement);
-   modal.appendChild(heightElement);
-   modal.appendChild(typeElement);
+   modalTitle.appendChild(titleElement);
+   modalBody.appendChild(imageElement);
+   modalBody.appendChild(heightElement);
+   modalBody.appendChild(typeElement);
    modalContainer.appendChild(modal);
 
    modalContainer.classList.add('is-visible');
