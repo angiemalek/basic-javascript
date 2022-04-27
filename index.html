@@ -43,7 +43,7 @@
         <div class="row justify-content-sm-center">
           <div class="col col-lg-6 col-md-8">
             <h1 class="pokemon-font">Pokemons</h1>
-            <ul class="list-group list-unstyled flew-row flew-wrap w-100 just-content: center" data-toggle="modal" data-target="#exampleModal">
+            <ul class="list-group list-unstyled flex-row flex-wrap w-100 just-content: center" data-toggle="modal" data-target="#pokemonModal">
               <li class="group-list-item">
                 <button class="btn-primary search-button" data-toggle="modal" data-target="#exampleModal"></button>
               </li>
@@ -54,12 +54,15 @@
       </div>
 
     <!-- Modal  Container-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="sr-only">Pokemon Details</div>
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+          </div>
+          <div class="modal-body text-capitalize">Content</div>
+          <div>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
