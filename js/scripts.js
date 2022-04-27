@@ -98,16 +98,14 @@ let pokemonRepository = (function() {
    modalBody.empty();
 
    // Creates element for name in modal
-   let titleElement = document.createElement('h1');
-   titleElement.innerText = pokemon.name;
+   let titleElement = $('<h1>' + pokemon.name + '</h1>');
 
    // Creates element for height in modal
-   let heightElement = document.createElement('p');
-   heightElement.innerText = 'Height: ' + pokemon.height;
+   let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
 
    // Creates element for type in modal
-   let typesElement = document.createElement('p');
-   typesElement.innerText = 'Types: ' + pokemon.types;
+   let typesElement = $('<p>' + 'Types :' + pokemon.types + '</p>');
+   
    pokemon.types.forEach((types, numberOfTypes) => {
      numberOfTypes = pokemon.types.pokemon;
 
