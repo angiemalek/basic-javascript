@@ -10,14 +10,24 @@ body {
   height: 100vh;
   cursor: arrow; */
 }
+
+.pokemon-font {
+  font-family: 'Slackey', cursive;
+  font-size: 35px;
+  color: #D82B05;
+}
  .modal-header {
    background-color: #FFd5cc;
+ }
+
+ .modal-title {
+   font-family: 'Slackey', cursive;
  }
 /*.background {
   background-image:url(../images/opac.pokemons.png);
 }*/
 
-.button-class {
+/*.button-class {
   background-color: #FFd5cc;
   border: none;
   border-radius: 40px;
@@ -32,7 +42,7 @@ body {
   cursor: url('../images/poke_cursor.png'), auto;
   color: black;
   border: 6px solid #D82B05; /*Red*/
-}
+
 
 /* cursor hover
 .button-class:hover {
@@ -41,7 +51,7 @@ body {
 } */
 
 /* Removes bullets from list*/
-ul.pokemon-list {
+.list-group-item {
 /*  display: flex;
   flex-wrap: wrap;*/
   list-style: none;
