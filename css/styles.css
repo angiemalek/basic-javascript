@@ -30,7 +30,7 @@ body {
   background-image:url(../images/opac.pokemons.png);
 }*/
 
-/*.button-class {
+.container {
   background-color: #FFd5cc;
   border: none;
   border-radius: 40px;
