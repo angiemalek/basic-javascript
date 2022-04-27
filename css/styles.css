@@ -11,6 +11,10 @@ body {
   cursor: arrow; */
 }
 
+.navbar{
+  background-color: #ffeae6;
+}
+
 .pokemon-font {
   font-family: 'Slackey', cursive;
   font-size: 60px;

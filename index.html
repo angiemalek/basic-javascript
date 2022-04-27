@@ -26,10 +26,9 @@
     <!--<div class="background">-->
 
       <!--<ul class="pokemon-list"></ul>-->
-      
+
       <!-- Nav Bar-->
-      <nav class="navbar navbar-light bg-light"
-      style="background-color: #ffeae6;">
+      <nav class="navbar">
         <a class="navbar-brand">Pokedex</a>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -44,7 +43,7 @@
             <ul
               class="list-group pokemon-list"
               data-toggle="modal"
-              data-target="#modal-container"
+              data-target="#pokemonModal"
             ></ul>
           </div>
           <div class="sr-only">List of Pokemons</div>
@@ -52,7 +51,7 @@
       </div>
 
     <!-- Modal  Container-->
-    <div class="modal fade" id="modal-container" tabindex="-1" role="dialog" aria-labelledby="modal-containerLabel" aria-hidden="true">
+    <div class="modal fade" id="pokemonModal" tabindex="-1" role="dialog" aria-labelledby="modal-containerLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="sr-only">Pokemon Details</div>
         <div class="modal-content">
