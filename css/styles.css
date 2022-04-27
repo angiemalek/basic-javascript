@@ -13,8 +13,10 @@ body {
 
 .pokemon-font {
   font-family: 'Slackey', cursive;
-  font-size: 35px;
+  font-size: 60px;
+  text-align: center;
   color: #D82B05;
+  text-shadow: -3px 2px 0px #000;
 }
  .modal-header {
    background-color: #FFd5cc;
@@ -22,6 +24,7 @@ body {
 
  .modal-title {
    font-family: 'Slackey', cursive;
+   font-size: 45px;
  }
 /*.background {
   background-image:url(../images/opac.pokemons.png);
@@ -68,7 +71,7 @@ body {
 } */
 
 /* Parameters for Pokemon title, may change later*/
-.title {
+ /*.title {
   text-align: center;
   font-size: 35px;
   color: #D82B05;
