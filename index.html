@@ -22,21 +22,22 @@
 
 
   <body>
-
-      <ul class="pokemon-list"></ul>
-
-      <!-- Button trigger modal -->
-      	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Launch demo modal
-      </button>
-
+    <header class="page-header">
       <!-- Nav Bar-->
       <nav class="navbar">
         <a class="navbar-brand">Pokedex</a>
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+
+
+      <!-- Search Bar-->
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      <div class="sr-only">Navigation Bar</div>
+    </nav>
+    </header>
+
+      <ul class="pokemon-list"></ul>
 
       <!-- Pokedex Pokemons-->
       <div class="container">
