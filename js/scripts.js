@@ -38,7 +38,7 @@ let pokemonRepository = (function() {
     button.innerText = pokemon.name;
     button.classList.add('btn', 'btn-info', 'btn-lg', 'w-100');
     buttong.setAttribute('data-toggle', 'modal');
-    button.setAttribute('data-target', '#modal-container');
+    button.setAttribute('data-target', '#exampleModal');
     listpokemon.append(button);
     pokemonList.append(listpokemon);
     // Event listener that shows object details when button clicked
@@ -105,7 +105,7 @@ let pokemonRepository = (function() {
 
    // Creates element for type in modal
    let typesElement = $('<p>' + 'Types :' + pokemon.types + '</p>');
-   
+
    pokemon.types.forEach((types, numberOfTypes) => {
      numberOfTypes = pokemon.types.pokemon;
 
@@ -117,15 +117,14 @@ let pokemonRepository = (function() {
    })
 
    // Creates image in modal
-   let container = document.querySelector('.image-container');
-   letpokeImg = document.createElement('img');
-   pokeImg.src = pokemon.imageUrl;
+   let imageElement = $('<img class='modal-img'>');
+   imageElement.attr('src', pokemon.imageUrl);
 
 
    modalTitle.append(titleElement);
+   modalBody.append(imageElement);
    modalBody.append(heightElement);
    modalBody.append(typesElement);
-   modalBody.append(pokeImg);
  }
 
   return {
