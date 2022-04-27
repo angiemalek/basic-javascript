@@ -8,7 +8,7 @@ let pokemonRepository = (function() {
   let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
 
   // modal container
-  let modalContainer = document.querySelector('#modal-container');
+  let modalContainer = document.querySelector('#pokemonModal');
   //Functions
 
   // Adds new Pokemon
@@ -127,15 +127,15 @@ let pokemonRepository = (function() {
    modalBody.append(typesElement);
  }
 
-  // Search Bar Function
-  $(document).ready(function(){
-  $('#myInput').on('keyup', function() {
-  let value = $(this).val().toLowerCase();
-  $(".search-button").filter(function() {
-  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-  });
-  });
-  });
+// Search Bar Function
+//$(document).ready(function(){
+// $('#myInput').on('keyup', function() {
+//let value = $(this).val().toLowerCase();
+//$(".search-button").filter(function() {
+//$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//});
+//});
+//});
 
   return {
     add: add,
