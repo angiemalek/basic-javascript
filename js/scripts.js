@@ -38,7 +38,7 @@ let pokemonRepository = (function() {
     button.innerText = pokemon.name;
     button.classList.add('btn', 'btn-info', 'btn-lg', 'w-100');
     buttong.setAttribute('data-toggle', 'modal');
-    button.setAttribute('data-target', '#exampleModal');
+    button.setAttribute('data-target', '#pokemonModal');
     listpokemon.append(button);
     pokemonList.append(listpokemon);
     // Event listener that shows object details when button clicked

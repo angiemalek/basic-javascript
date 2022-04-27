@@ -17,6 +17,22 @@ body {
   font-size: 40px;
 }
 
+button.btn-primary{
+  background-color: #FFd5cc;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Slackey', cursive;
+  font-size: 25px;
+  margin: 4px 2px;
+  color: black;
+  border: 6px solid #D82B05; /*Red*/
+}
+
 .pokemon-font {
   font-family: 'Slackey', cursive;
   font-size: 80px;
