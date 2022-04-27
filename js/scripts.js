@@ -127,6 +127,16 @@ let pokemonRepository = (function() {
    modalBody.append(typesElement);
  }
 
+  // Search Bar Function
+  $(document).ready(function(){
+  $('#myInput').on('keyup', function() {
+  let value = $(this).val().toLowerCase();
+  $(".search-button").filter(function() {
+  $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+  });
+  });
+  });
+
   return {
     add: add,
     getAll: getAll,
