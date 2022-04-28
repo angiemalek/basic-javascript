@@ -11,14 +11,19 @@ body {
   cursor: arrow; */
 }
 
+.background {
+  background-image:url(../images/opac.pokemons.png);
+}
+
 .navbar{
-  background-color: #ffeae6;
+  opacity: 1;
   color: #D82B05;
-  font-size: 40px;
 }
 
 .pokedex {
-  text-shadow: -1px 2px 0px #000;
+  color: #D82B05;
+  font-size: 40px;
+  text-shadow: -1px 2px 0px #000; 
 }
 
 /*
@@ -55,9 +60,6 @@ button.btn-primary{
    font-family: 'Slackey', cursive;
    font-size: 45px;
  }
-/*.background {
-  background-image:url(../images/opac.pokemons.png);
-}*/
 
 /* modal container to hold pokemon image and stats */
 .modal-content {
