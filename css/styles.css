@@ -5,10 +5,10 @@
 body {
   font-family: 'Slackey', cursive;
   background-color: #ffeae6;
-/* Custom Cursor
+/* Custom Cursor */
   margin: 0;
   height: 100vh;
-  cursor: arrow; */
+  cursor: default;
 }
 
 .background {
@@ -23,25 +23,8 @@ body {
 .pokedex {
   color: #D82B05;
   font-size: 40px;
-  text-shadow: -1px 2px 0px #000; 
+  text-shadow: -1px 2px 0px #000;
 }
-
-/*
-button.btn-primary{
-  background-color: #FFd5cc;
-  border: none;
-  border-radius: 40px;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Slackey', cursive;
-  font-size: 25px;
-  margin: 4px 2px;
-  color: black;
-  border: 6px solid #D82B05; /*Red*/
-
 
 .pokemon-font {
   font-family: 'Slackey', cursive;
@@ -50,11 +33,6 @@ button.btn-primary{
   color: #D82B05;
   text-shadow: -3px 2px 0px #000;
 }
-
-/*
- .modal-header {
-   background-color: #FFd5cc;
- } */
 
  .modal-title {
    font-family: 'Slackey', cursive;
@@ -91,21 +69,28 @@ button.btn-primary {
   border: 6px solid #D82B05; /*Red*/
 }
 
+button.btn-primary:hover {
+  color: black;
+}
+
 /* Close button styling */
 button.btn.btn-primary {
+  background-color: #FFd5cc;
   font-family: 'Slackey', cursive;
   font-size: 15px;
-  border-radius: 40px;
+  border: none;
+  color: black;
   position: absolute;
   top: 0px;
   right: 0px;
 }
 
-/* cursor hover
-.button-class:hover {
+ /*cursor hover */
+button.btn-primary:hover {
   background-color:  #ffeae6;
   color: light gray;
-} */
+  cursor: url('../images/poke_cursor.png'), auto;
+}
 
 /* Removes bullets from list*/
 .list-group-item {
