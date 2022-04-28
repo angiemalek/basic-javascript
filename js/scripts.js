@@ -5,22 +5,22 @@ let pokemonRepository = (function() {
   let pokemonList = [];
 
   // Creates link to URL to complete pokemon list
-  let apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';
+  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
   // modal container
-  let modalContainer = document.querySelector('#pokemonModal');
+  let modalContainer = document.querySelector("#pokemonModal");
   //Functions
 
   // Adds new Pokemon
   function add(pokemon) {
     if (
-      typeof pokemon === 'object' &&
-      'name' in pokemon &&
-      'detailsUrl' in pokemon
+      typeof pokemon === "object" &&
+      "name" in pokemon &&
+      "detailsUrl" in pokemon
      ){
       pokemonList.push(pokemon);
   } else {
-      console.log('Pokemon is incorrect');
+      console.log("Pokemon is incorrect");
   }
 }
 
@@ -31,18 +31,18 @@ let pokemonRepository = (function() {
 
   // Creates button of Pokemon
   function addListItem(pokemon){
-    let pokemonList = document.querySelector('.list-group');
-    let listpokemon = document.createElement('li');
-    listpokemon.classList.add('group-list-item');
-    let button = document.createElement('button');
+    let pokemonList = document.querySelector(".list-group");
+    let listpokemon = document.createElement("li");
+    listpokemon.classList.add("group-list-item");
+    let button = document.createElement("button");
     button.innerText = pokemon.name;
-    button.classList.add('btn-primary', 'search-button');
-    buttong.setAttribute('data-toggle', 'modal');
-    button.setAttribute('data-target', '#pokemonModal');
+    button.classList.add("btn-primary", "search-button");
+    button.setAttribute("data-toggle", "#modal");
+    button.setAttribute("data-target", "#pokemonModal");
     listpokemon.append(button);
     pokemonList.append(listpokemon);
     // Event listener that shows object details when button clicked
-    button.addEventListener('click', function() {
+    button.addEventListener("click", function() {
       showDetails(pokemon);
     });
   }
@@ -89,28 +89,33 @@ let pokemonRepository = (function() {
 
 // Shows pokemon modal
  function showModal(pokemon) {
-   let modalBody = $('.modal-body');
-   let modalTitle = $('.modal-title');
-   let modalHeader = $('.modal-header');
+   let modalBody = $(".modal-body");
+   let modalTitle = $(".modal-title");
+   let modalHeader = $(".modal-header");
 
    // Clears existing content of modal
    modalTitle.empty();
    modalBody.empty();
 
    // Creates element for name in modal
-   let titleElement = $('<h1>' + pokemon.name + '</h1>');
+  let titleElement = document.createElement("h1");
+  titleElement.innerText = pokemon.name;
+
+
+   /*let titleElement = $("<h1>" + pokemon.name + "</h1>"); */
 
    // Creates image in modal
-   let imageElement = $('<img class='modal-img'>');
-   imageElement.attr('src', pokemon.imageUrl);
+   let imageElement = $('<img class="modal-img">');
+   imageElement.attr("src", pokemon.imageUrl);
 
    // Creates element for height in modal
    let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
 
    // Creates element for type in modal
-   let typesElement = $('<p>' + 'Types :' + pokemon.types + '</p>');
+   typesElement.text('Types: ' + pokemon.types.map(types => types.type.name).join(', '));
+   /*let typesElement = $('<p>' + 'Types :' + pokemon.types + '</p>');
 
-   pokemon.types.forEach((types, numberOfTypes) => {
+   /*pokemon.types.forEach((types, numberOfTypes) => {
      numberOfTypes = pokemon.types.pokemon;
 
      if (numberOfTypes === 1) {
@@ -118,7 +123,7 @@ let pokemonRepository = (function() {
      } else {
        typesElement.innerText += types.types.name + ' ';
      }
-   })
+   }) */
 
 
    modalTitle.append(titleElement);
