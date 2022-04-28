@@ -120,7 +120,6 @@ button.btn.btn-outline-success:hover {
 
 /* Removes bullets from list*/
 ul.list-group.pokemon-list {
-
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -136,13 +135,6 @@ ul.list-group.pokemon-list {
   text-align: center;
 } */
 
-/* Parameters for Pokemon title, may change later*/
- /*.title {
-  text-align: center;
-  font-size: 35px;
-  color: #D82B05;
-  text-shadow: -3px 2px 0px #000;
-}
 
 /*custom cursor
   cursor: url('../images/poke_cursor.png'), auto; */

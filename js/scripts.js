@@ -90,29 +90,33 @@ let pokemonRepository = (function() {
 // Shows pokemon modal
  function showModal(pokemon) {
    let modalBody = $(".modal-body");
-   let modalTitle = $(".modal-title");
-   let modalHeader = $(".modal-header");
+   //let modalTitle = $(".modal-title");
+   //let modalHeader = $(".modal-header");
 
-   // Clears existing content of modal
-   modalTitle.empty();
-   modalBody.empty();
 
    // Creates element for name in modal
-  let titleElement = document.createElement("h1");
-  titleElement.innerText = pokemon.name;
+  let titleElement = $("<h1>" + pokemon.name + "</h1>");
+
+  // Clears existing content of modal
+  modalTitle.empty();
+  modalBody.empty();
+
+
+  modalBody.append(titleElement);
+}
 
 
    /*let titleElement = $("<h1>" + pokemon.name + "</h1>"); */
 
    // Creates image in modal
-   let imageElement = $('<img class="modal-img">');
-   imageElement.attr("src", pokemon.imageUrl);
+   //let imageElement = $('<img class="modal-img">');
+   //imageElement.attr("src", pokemon.imageUrl);
 
    // Creates element for height in modal
-   let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
+   //let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
 
    // Creates element for type in modal
-   typesElement.text('Types: ' + pokemon.types.map(types => types.type.name).join(', '));
+   //typesElement.text('Types: ' + pokemon.types.map(types => types.type.name).join(', '));
    /*let typesElement = $('<p>' + 'Types :' + pokemon.types + '</p>');
 
    /*pokemon.types.forEach((types, numberOfTypes) => {
@@ -126,21 +130,21 @@ let pokemonRepository = (function() {
    }) */
 
 
-   modalTitle.append(titleElement);
-   modalBody.append(imageElement);
-   modalBody.append(heightElement);
-   modalBody.append(typesElement);
- }
+   //modalTitle.append(titleElement);
+   //modalBody.append(imageElement);
+  // modalBody.append(heightElement);
+   //modalBody.append(typesElement);
+ //}
 
 // Search Bar Function
-$(document).ready(function(){
-$('#myInput').on('keyup', function() {
-let value = $(this).val().toLowerCase();
-$(".search-button").filter(function() {
-$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-});
-});
-});
+//$(document).ready(function(){
+//$('#myInput').on('keyup', function() {
+//let value = $(this).val().toLowerCase();
+//$(".search-button").filter(function() {
+//$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+//});
+//});
+//});
 
   return {
     add: add,
