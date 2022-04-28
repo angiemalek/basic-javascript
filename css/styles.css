@@ -119,10 +119,11 @@ button.btn.btn-outline-success:hover {
 
 
 /* Removes bullets from list*/
-.group-list-item {
+ul.list-group.pokemon-list {
+
   display: flex;
   flex-wrap: wrap;
-  /*list-style: none;*/
+  list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
