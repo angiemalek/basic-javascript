@@ -89,20 +89,36 @@ let pokemonRepository = (function() {
 
 // Shows pokemon modal
  function showModal(pokemon) {
+   let modalTitle = $(".modal-title");
+   let modalImage = $(".modal-image");
    let modalBody = $(".modal-body");
-   //let modalTitle = $(".modal-title");
-   //let modalHeader = $(".modal-header");
 
 
-   // Creates element for name in modal
-  let titleElement = $("<h1>" + pokemon.name + "</h1>");
+   let titleElement = $("<h2>");
+   titleElement.text(pokemon.name);
+
+   let imageElement = $("<img class=>");
+   imageElement.attr("src", pokemon.imageUrl);
+
+    let heightElement = $("<p>");
+    heightElement.text(pokemon.height);
+
+   // Creates element for type in modal
+   let typesElement = $("<p>");
+   typesElement.text('Types: ' + pokemon.types.map(types => types.type.name).join(', '));
+
 
   // Clears existing content of modal
+  modalImage.empty();
   modalTitle.empty();
   modalBody.empty();
 
-
+//  modalBody.append(imageElement);
   modalBody.append(titleElement);
+  modalImage.append(imageElement);
+  modalBody.append(heightElement);
+  modalBody.append(typesElement);
+
 }
 
 
@@ -115,19 +131,7 @@ let pokemonRepository = (function() {
    // Creates element for height in modal
    //let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
 
-   // Creates element for type in modal
-   //typesElement.text('Types: ' + pokemon.types.map(types => types.type.name).join(', '));
-   /*let typesElement = $('<p>' + 'Types :' + pokemon.types + '</p>');
 
-   /*pokemon.types.forEach((types, numberOfTypes) => {
-     numberOfTypes = pokemon.types.pokemon;
-
-     if (numberOfTypes === 1) {
-       typesElement.innerText += types.types.name;
-     } else {
-       typesElement.innerText += types.types.name + ' ';
-     }
-   }) */
 
 
    //modalTitle.append(titleElement);
