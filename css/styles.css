@@ -34,9 +34,9 @@ body {
   text-shadow: -3px 2px 0px #000;
 }
 
- .modal-title {
+ h2 {
    font-family: 'Slackey', cursive;
-   font-size: 45px;
+   font-size: 40px;
  }
 
 /* modal container to hold pokemon image and stats */
