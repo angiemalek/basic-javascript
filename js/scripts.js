@@ -102,9 +102,9 @@ function add(pokemon) {
    let heightElement = $("<p>");
    heightElement.text("Height: " + pokemon.height);
 
-   // Creates element for type in modal
-   let typesElement = $("<p>");
-   typesElement.text("Types: " + pokemon.types.map(types => types.type.name).join(", "));
+  // Creates element for type in modal
+  let typesElement = $("<p>");
+  typesElement.text("Types: " + pokemon.types.map(types => types.type.name).join(", "));
 
 
   // Clears existing content of modal

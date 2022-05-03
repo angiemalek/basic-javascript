@@ -42,13 +42,14 @@ body {
 /* modal container to hold pokemon image and stats */
 .modal-content {
   margin: auto;
-  display: block;
-  box-sizing: border-box;
+  /*display: block;*/
+  /*box-sizing: border-box;*/
   background: #FFE4DE;
   padding: 15px;
   width: 350px;
   height: 400px;
   max-width: 350px;
+  display: flex;
   text-align: center;
   border: 6px solid #D82B05;
   border-radius: 30px;
