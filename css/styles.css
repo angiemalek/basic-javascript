@@ -126,5 +126,6 @@ ul.list-group.pokemon-list {
   margin-block-start: 0;
   margin-block-end: 0;
   padding-inline-start: 0;
+  text-transform: capitalize;
   text-align: center;
 }
