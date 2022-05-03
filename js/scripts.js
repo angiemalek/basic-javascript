@@ -1,26 +1,24 @@
 // Creates IIFE
 let pokemonRepository = (function() {
 
-  // Creates an array of Pokemon
-  let pokemonList = [];
+// Creates an array of Pokemon
+let pokemonList = [];
 
-  // Creates link to URL to complete pokemon list
-  let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
+// Creates link to URL to complete pokemon list
+let apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=150";
 
-  // modal container
-  let modalContainer = document.querySelector("#pokemonModal");
-  //Functions
+//Functions
 
-  // Adds new Pokemon
-  function add(pokemon) {
-    if (
-      typeof pokemon === "object" &&
-      "name" in pokemon &&
-      "detailsUrl" in pokemon
-     ){
-      pokemonList.push(pokemon);
-  } else {
-      console.log("Pokemon is incorrect");
+// Adds new Pokemon
+function add(pokemon) {
+  if (
+    typeof pokemon === "object" &&
+    "name" in pokemon &&
+    "detailsUrl" in pokemon
+    ){
+    pokemonList.push(pokemon);
+} else {
+    console.log("Pokemon is incorrect");
   }
 }
 
@@ -101,12 +99,12 @@ let pokemonRepository = (function() {
    let imageElement = $("<img class=>");
    imageElement.attr("src", pokemon.imageUrl);
 
-    let heightElement = $("<p>");
-    heightElement.text('Height: ' + pokemon.height);
+   let heightElement = $("<p>");
+   heightElement.text("Height: " + pokemon.height);
 
    // Creates element for type in modal
    let typesElement = $("<p>");
-   typesElement.text('Types: ' + pokemon.types.map(types => types.type.name).join(', '));
+   typesElement.text("Types: " + pokemon.types.map(types => types.type.name).join(", "));
 
 
   // Clears existing content of modal
@@ -125,25 +123,6 @@ let pokemonRepository = (function() {
 
 }
 
-
-   /*let titleElement = $("<h1>" + pokemon.name + "</h1>"); */
-
-   // Creates image in modal
-   //let imageElement = $('<img class="modal-img">');
-   //imageElement.attr("src", pokemon.imageUrl);
-
-   // Creates element for height in modal
-   //let heightElement = $('<p>' + 'Height: ' + pokemon.height + '</p>');
-
-
-
-
-   //modalTitle.append(titleElement);
-   //modalBody.append(imageElement);
-  // modalBody.append(heightElement);
-   //modalBody.append(typesElement);
- //}
-
 // Add event listener to search Bar
 let searchInput = document.querySelector("#search-bar");
 
@@ -151,7 +130,7 @@ searchInput.addEventListener("input", function() {
   let pokeList = document.querySelectorAll("ul.pokemon-list li");
   let value = searchInput.value.toUpperCase();
 
-  pokelist.forEach(function (pokemon) {
+  pokeList.forEach(function (pokemon) {
     if (pokemon.innerText.toUpperCase().indexOf(value) > -1)
     {
       pokemon.style.display = "list-item";
@@ -177,64 +156,3 @@ pokemonRepository.loadList().then(function() {
     pokemonRepository.addListItem(pokemon);
   });
 });
-
-
-
-
-  // TO DO: Delete code once app completed
-
-  //  for loop executing name and height of pokemon
-  //   for (let i=0; i < pokemonList.length; i++);
-  //   pokemonRepository.getAll().forEach(function(pokemon) {
-  //   pokemonRepository.addListItem(pokemon);
-  // });
-
-  // for each loop listing pokemon details
-  //   pokemonList.forEach(function(pokemonRepository){
-  //    console.log(pokemon.name  +  ' is ' + pokemon.height);
-  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
-  //  });
-
-  // for loop to print pokemon
-  //   if (pokemonList[i].height >= 0.5){
-  //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
-  //     } else if (pokemonList[i].height <=0.5 )
-  //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
-  //   };
-
-  //  Conditonal for pokemon
-  //  if (pokemon.height >= 0.5) {
-  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Big!</p>');
-  //  } else if (pokemon.height < 0.5) {
-  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Tiny!</p>')
-  // };
-
-
-
-  // TO DO: Delete code once app completed
-
-  //  for loop executing name and height of pokemon
-  //   for (let i=0; i < pokemonList.length; i++);
-  //   pokemonRepository.getAll().forEach(function(pokemon) {
-  //   pokemonRepository.addListItem(pokemon);
-  // });
-
-  // for each loop listing pokemon details
-  //   pokemonList.forEach(function(pokemonRepository){
-  //    console.log(pokemon.name  +  ' is ' + pokemon.height);
-  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + '</p>')
-  //  });
-
-  // for loop to print pokemon
-  //   if (pokemonList[i].height >= 0.5){
-  //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Big!</p>');
-  //     } else if (pokemonList[i].height <=0.5 )
-  //      document.write('<p>' + pokemonList[i].name + ' (' + pokemonList[i].height + ')' + ' - Wow That\'s Tiny!</p>');
-  //   };
-
-  //  Conditonal for pokemon
-  //  if (pokemon.height >= 0.5) {
-  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Big!</p>');
-  //  } else if (pokemon.height < 0.5) {
-  //    document.write('<p>' + pokemon.name + ' is ' + '(' + pokemon.height + ')' + ' Wow That\'s Tiny!</p>')
-  // };

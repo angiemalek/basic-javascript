@@ -128,13 +128,3 @@ ul.list-group.pokemon-list {
   padding-inline-start: 0;
   text-align: center;
 }
-
-/* delete once for sure not needed
-/* Alignment for Pokemon text
-.list {
-  text-align: center;
-} */
-
-
-/*custom cursor
-  cursor: url('../images/poke_cursor.png'), auto; */
