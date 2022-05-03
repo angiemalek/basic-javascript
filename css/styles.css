@@ -77,14 +77,14 @@ button.btn-primary:hover {
 }
 
 /* Close button styling */
-button.btn.btn-primary {
+button.btn.btn-close {
   font-family: 'Slackey', cursive;
   font-size: 15px;
   border: none;
   color: black;
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 10px;
 }
 
 button.btn.btn-primary:hover{
