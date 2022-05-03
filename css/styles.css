@@ -50,7 +50,7 @@ body {
   height: 400px;
   max-width: 350px;
   display: flex;
-  text-align: center;
+  align-items: center;
   border: 6px solid #D82B05;
   border-radius: 30px;
 }
