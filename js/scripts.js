@@ -156,7 +156,7 @@ searchInput.addEventListener("input", function() {
     {
       pokemon.style.display = "list-item";
     } else {
-      pokemon.style.display - "none";
+      pokemon.style.display = "none";
     }
   });
 });
