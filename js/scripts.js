@@ -144,15 +144,22 @@ let pokemonRepository = (function() {
    //modalBody.append(typesElement);
  //}
 
-// Search Bar Function
-//$(document).ready(function(){
-//$('#myInput').on('keyup', function() {
-//let value = $(this).val().toLowerCase();
-//$(".search-button").filter(function() {
-//$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-//});
-//});
-//});
+// Add event listener to search Bar
+let searchInput = document.querySelector("#search-bar");
+
+searchInput.addEventListener("input", function() {
+  let pokeList = document.querySelectorAll("ul.pokemon-list li");
+  let value = searchInput.value.toUpperCase();
+
+  pokelist.forEach(function (pokemon) {
+    if (pokemon.innerText.toUpperCase().indexOf(value) > -1)
+    {
+      pokemon.style.display = "list-item";
+    } else {
+      pokemon.style.display - "none";
+    }
+  });
+});
 
   return {
     add: add,
