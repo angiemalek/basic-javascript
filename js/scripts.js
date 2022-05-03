@@ -86,7 +86,7 @@ function add(pokemon) {
   }
 
 // Shows pokemon modal
- function showModal(pokemon) {
+ function showModal (pokemon) {
    let modalTitle = $(".modal-title");
    let modalImage = $(".modal-image");
    let modalBody = $(".modal-body");
