@@ -121,6 +121,8 @@ let pokemonRepository = (function() {
   modalFooter.append(heightElement);
   modalFooter.append(typesElement);
 
+  $("#pokemonModal").modal("toggle");
+
 }
 
 
