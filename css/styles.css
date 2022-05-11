@@ -1,10 +1,20 @@
+:root {
+  --lightPink: #ffeae6;
+  --darkerPink: #ffe4de;
+  --darkRed: #d82b05;
+  --black: #000;
+  --white: #fff;
+  --shadedPink: #ffd5cc;
+  --lightGray: #b3b3b3;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Slackey', cursive;
-  background-color: #ffeae6;
+  background-color: var(--lightPink);
 /* Custom Cursor */
   margin: 0;
   height: 100vh;
@@ -17,11 +27,11 @@ body {
 
 .navbar{
   opacity: 1;
-  color: #D82B05;
+  color: var(--darkRed);
 }
 
 .pokedex {
-  color: #D82B05;
+  color: var(--darkRed);
   font-size: 40px;
   text-shadow: -1px 2px 0px #000;
 }
@@ -30,7 +40,7 @@ body {
   font-family: 'Slackey', cursive;
   font-size: 90px;
   text-align: center;
-  color: #D82B05;
+  color: var(--darkRed);
   text-shadow: -3px 2px 0px #000;
 }
 
@@ -44,22 +54,23 @@ body {
   margin: auto;
   /*display: block;*/
   /*box-sizing: border-box;*/
-  background: #FFE4DE;
+  background: var(--darkerPink);
   padding: 15px;
   width: 350px;
   height: 400px;
   max-width: 350px;
   display: flex;
   align-items: center;
-  border: 6px solid #D82B05;
+  border: 6px solid var(--darkRed);
   border-radius: 30px;
 }
 
+/* button for pokelist*/
 button.btn-primary {
-  background-color: #FFd5cc;
+  background-color: var(--shadedPink);
   border: none;
   border-radius: 40px;
-  color: white;
+  color: var(--black);
   width: 250px;
   padding: 16px 32px;
   text-align: center;
@@ -68,13 +79,14 @@ button.btn-primary {
   font-size: 25px;
   text-transform: capitalize;
   margin: 4px 2px;
-  color: black;
-  border: 6px solid #D82B05; /*Red*/
+  border: 6px solid var(--darkRed);
 }
 
 /* Text color for button on hover*/
 button.btn-primary:hover {
-  color: black;
+  color: var(--lightGray);
+  background-color: var(--lightPink);
+  border: 6px solid var(--shadedPink);
 }
 
 /* Close button styling */
@@ -82,45 +94,25 @@ button.btn.btn-close {
   font-family: 'Slackey', cursive;
   font-size: 15px;
   border: none;
-  color: black;
+  color: var(--black);
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-button.btn.btn-primary:hover{
-  background-color: #FFd5cc;
-  font-family: 'Slackey', cursive;
-  font-size: 15px;
-  border: none;
-  color: black;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
- /*cursor hover */
-button.btn-primary:hover {
-  background-color:  #ffeae6;
-  color: light gray;
-  border: 6px solid #D82B05;
-  cursor: url('../images/poke_cursor.png'), auto;
-}
-
+/* search bar button*/
 button.btn.btn-outline-success {
-  background-color: #FFd5cc;
+  background-color: var(--shadedPink);
   color: #000;
-  border: 3px solid #D82B05;
+  border: 3px solid var(--darkRed);
   border-radius: 10px;
 }
 
 button.btn.btn-outline-success:hover {
-  background-color:  #ffeae6;
-  color: light gray;
+  background-color: var(--lightPink);
 }
 
-
-/* Removes bullets from list*/
+/* Removes bullets from Pokelist*/
 ul.list-group.pokemon-list {
   display: flex;
   flex-wrap: wrap;
