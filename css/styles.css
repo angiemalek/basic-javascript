@@ -131,3 +131,9 @@ ul.list-group.pokemon-list {
   text-transform: capitalize;
   text-align: center;
 }
+
+@media screen and (max-width: 320px) {
+  body {
+    width: min-content;
+  }
+}
